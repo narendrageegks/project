@@ -1,0 +1,155 @@
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Resume Wala
+        
+    </title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href='https://fonts.googleapis.com/css?family=Martel Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="{%static 'style.css' %}">
+    <style>
+        body {
+       font-family: Arial, Helvetica, sans-serif;
+       margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+  width: auto;
+  margin: 50px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(34, 14, 14);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width:60%;
+    display: block;
+    margin:auto;
+    padding: auto;
+  }
+
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+    </style>
+</head>
+
+<body style="background: linear-gradient(to right, #495866, #a1b5bb, #a2aab0, #5e91a9); ">
+        {%  include 'header.html' %}
+         
+        <div class="about-section"style="text-align: center;" style="margin-top: 100px;">
+            <h1>awesome</h1>
+            <p>This is my college project</p>
+            <p>This project running on aws (amazon web services)</p>
+          </div>
+          
+         <div >
+          
+            <div class="column">
+              <div class="card.col-md-12"style="text-align: center;">
+                <img src="/static/images/resume.jpg" alt="Mike" style="width:100%">
+                <div class="container ">
+                  <h2>Narendra Deore</h2>
+                  <p class="title" >Developer</p>
+                  <p>I am Developer of this project, I was work frontend as well as backend </p>
+                  <p>narendrasd5860@gmail.com</p>
+                  <p><button class="button">Contact</button></p>
+                  
+                </div>
+              </div>
+               <a href="#" class="fa fa-facebook"></a>
+               <a href="#" class="fa fa-twitter"></a>
+               <a href=""  class=" fa fa-instagram"></a>
+               <a href=""class="fa fa-gmail"></a>
+            </div>
+           
+           
+        {% include 'footer.html'%}
+    </body>
+</html>
